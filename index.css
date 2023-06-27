@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --container_lg: 50%;
+    --container_sm: 90%;
+}
+.container{
+    width: var(--container_lg);
+    margin: 100px auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: auto;
+    background: url(/Passenger_counter/img/bg_img.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 20px;
+}
+header{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    line-height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.781);
+}
+h1{
+    font-weight: bolder;
+    color: white;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+hr{
+    height: 5px;
+    background: black;
+}
+.counter{
+    margin-top: 10px;
+}
+#count{
+    font-size: 70px;
+    font-weight: bolder;
+    padding: 10px;
+    color: rgb(197, 5, 5);
+}
+button{
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    width: 120px;
+    margin: 10px;
+    border-radius: 4px;
+}
+#increment{
+    background-color: darkred;
+}
+#save{
+    background: darkgreen;
+}
+#clear{
+    color: black;
+}
+
+.display{
+    margin: 7px;
+    font-weight: bolder;
+}
+#display{
+    font-size: x-large;
+}
+
+/* modal */
+.modal_container{
+    width: 100%;
+    z-index: 10;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.95));
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    display: none;
+}
+.modal{
+    width: 40%;
+    margin: 110px auto;
+    text-align: center;
+    height: auto;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.7));
+}
+.modal p{
+    padding: 10px;
+}
+#accept{
+    color: blue;
+}
+#reject{
+    color: black;
+}
+.modal button:hover, #accept:hover, #reject:hover{
+    background: transparent;
+    color: white;
+}
+
+
+@media screen and (max-width:600px) {
+    .container{
+        width: var(--container_sm);
+        height: auto;
+    }
+    button{
+        width: 70%;
+    }
+    #clear{
+        width: 100px;
+    }
+    .modal {
+        width: 70%;
+    }
+}

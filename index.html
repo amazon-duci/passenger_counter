@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passenger Counter</title>
+    <link rel="stylesheet" href="/Passenger_counter/index.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Passenger Counter</h1>
+        </header>
+        <hr>
+        <div class="counter">
+            <h2 id="count">0</h2>
+            <button id="increment" onclick="increment()">INCREMENT</button>
+            <button id="save" onclick="save()">SAVE</button>
+            <p class="display">Total passengers: <span id="display">0</span></p>
+            <button id="clear" onclick="clear_all()">CLEAR</button>
+        </div>
+        <div class="date">
+            <h3 id="date"></h3>
+        </div>
+
+    </div>
+    <div class="modal_container" id="mdc">
+        <div class="modal">
+            <p>Are you sure you want to clear the previous entries?</p>
+            <button id="accept" onclick="acc()">Yes</button>
+            <button id="reject" onclick="rej()">No</button>
+        </div>    
+    </div>
+    
+    <script src="/Passenger_counter/index.js"></script>
+</body>
+</html>
