@@ -21,11 +21,23 @@
             <p class="display">Total passengers: <span id="display">0</span></p>
             <button id="clear" onclick="clear_all()">CLEAR</button>
         </div>
-        <div class="date">
-            <h3 id="date"></h3>
+        <div class="logs">
+            <p>Click <a href="#" onclick="viewLog()">HERE</a> to view logs</p>
         </div>
 
     </div>
+
+    <!-- modal for view log -->
+    <div class="viewLog_container" id="vl">
+        <div class="viewLog">
+            <p id="save_prog">Number Per each Save: </p>
+            <p id="clear_prog">Clear Progressions: </p>
+            <button id="prog_ok" onclick="closeLog()">OK</button>
+        </div>
+    </div>
+
+
+    <!-- Modal for clear confirmation -->
     <div class="modal_container" id="mdc">
         <div class="modal">
             <p>Are you sure you want to clear the previous entries?</p>
