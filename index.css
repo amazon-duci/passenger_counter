@@ -72,6 +72,36 @@ button{
     font-size: x-large;
 }
 
+/* log */
+.viewLog_container{
+    width: 100%;
+    z-index: 10;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.95));
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    display: none;
+}
+.viewLog{
+    width: 40%;
+    margin: 110px auto;
+    text-align: center;
+    height: auto;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.7));
+}
+.viewLog p{
+    padding: 20px 5px;
+}
+.viewLog p span{    
+    width: 95%;
+}
+#prog_ok{
+    color: red;
+}
+
 /* modal */
 .modal_container{
     width: 100%;
@@ -118,7 +148,7 @@ button{
     #clear{
         width: 100px;
     }
-    .modal {
+    .modal, .viewLog{
         width: 70%;
     }
 }
