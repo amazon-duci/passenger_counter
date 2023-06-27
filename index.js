@@ -16,7 +16,15 @@ function save(){
     return save;
 }
 function clear_all(){
-    mdc.style.display = 'block';
+    if (total != 0 && count == 0){
+        mdc.style.display = 'block';
+    }
+    else if (count != 0){
+        alert("please save the current count");
+    }
+    else{
+        alert("There is no current entry to clear");
+    }
 }
 
 function acc(){
