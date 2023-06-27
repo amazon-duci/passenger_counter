@@ -58,8 +58,8 @@ let save_prog = document.getElementById('save_prog');
 let clear_prog = document.getElementById('clear_prog');
 function viewLog(){
     view.style.display = 'block';
-    save_prog.textContent += saveBatch;
-    clear_prog.textContent += myArray;
+    save_prog.textContent = "Number Per each Save: " + saveBatch;
+    clear_prog.textContent = "Clear Progressions: " + myArray;
 }
 function closeLog(){
     view.style.display = 'none';
